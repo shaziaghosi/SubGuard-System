@@ -1,0 +1,90 @@
+.how-section {
+  padding: 100px 7%;
+  background: #0d0d0d;
+  color: #f5f1e8;
+}
+
+.how-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.how-eyebrow {
+  color: #d6ad60;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.how-heading {
+  margin: 20px 0;
+  font-size: clamp(38px, 5vw, 62px);
+  line-height: 1.12;
+}
+
+.how-heading span {
+  color: #d6ad60;
+}
+
+.how-intro {
+  margin: 0 auto 50px;
+  max-width: 550px;
+  color: #aaa69e;
+  line-height: 1.8;
+}
+
+.how-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  text-align: left;
+}
+
+.how-card {
+  padding: 30px;
+  border: 1px solid rgba(214, 173, 96, 0.2);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.025);
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.how-card:hover {
+  border-color: rgba(214, 173, 96, 0.7);
+  transform: translateY(-5px);
+}
+
+.how-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+  color: #d6ad60;
+}
+
+.how-card-top span {
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.how-card h3 {
+  margin: 0 0 12px;
+  font-size: 20px;
+}
+
+.how-card p {
+  margin: 0;
+  color: #aaa69e;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+@media (max-width: 800px) {
+  .how-section {
+    padding: 75px 6%;
+  }
+
+  .how-grid {
+    grid-template-columns: 1fr;
+  }
+}

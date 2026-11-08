@@ -1,0 +1,458 @@
+
+/* Renewal calendar section */
+.renewal-calendar-section {
+  margin: 28px 0;
+  padding: 24px;
+  border: 1px solid rgba(212, 175, 55, 0.15);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.018);
+  color: #f5f5f5;
+}
+
+.renewal-calendar-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.calendar-eyebrow {
+  display: block;
+  margin-bottom: 7px;
+  color: #d4af37;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.renewal-calendar-heading h3 {
+  margin: 0 0 7px;
+  color: #fff;
+  font-size: 21px;
+}
+
+.renewal-calendar-heading p {
+  margin: 0;
+  color: #999;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.calendar-heading-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  border-radius: 12px;
+  color: #d4af37;
+  background: rgba(212, 175, 55, 0.08);
+}
+
+.renewal-calendar-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(240px, 0.8fr);
+  gap: 22px;
+  align-items: start;
+}
+
+.calendar-main,
+.upcoming-reminders {
+  min-width: 0;
+  padding: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.16);
+}
+
+/* Month navigation */
+.calendar-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.calendar-navigation h4 {
+  margin: 0;
+  color: #fff;
+  font-size: 15px;
+}
+
+.calendar-navigation button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: 8px;
+  color: #d4af37;
+  background: transparent;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.calendar-navigation button:hover {
+  background: rgba(212, 175, 55, 0.12);
+}
+
+/* Calendar grid */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 5px;
+}
+
+.calendar-weekday {
+  padding: 8px 0;
+  color: #888;
+  font-size: 11px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.calendar-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 7px;
+  min-width: 0;
+  min-height: 58px;
+  padding: 9px 2px 5px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: #ddd;
+  background: rgba(255, 255, 255, 0.025);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.calendar-day:not(:disabled):hover {
+  border-color: rgba(212, 175, 55, 0.4);
+  background: rgba(212, 175, 55, 0.08);
+}
+
+.calendar-day:disabled {
+  cursor: default;
+  background: transparent;
+}
+
+.calendar-day-number {
+  font-size: 12px;
+}
+
+.calendar-today {
+  border-color: rgba(212, 175, 55, 0.5);
+  color: #f5d778;
+}
+
+.calendar-selected {
+  border-color: #d4af37;
+  color: #171717;
+  background: #d4af37;
+}
+
+.calendar-selected .calendar-day-number {
+  font-weight: 800;
+}
+
+.calendar-event-dots {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 6px;
+}
+
+.calendar-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.renewal-dot {
+  background: #d4af37;
+}
+
+.trial-dot {
+  background: #76b7e5;
+}
+
+.calendar-selected .renewal-dot {
+  background: #222;
+}
+
+.calendar-selected .trial-dot {
+  background: #fff;
+}
+
+.calendar-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.calendar-legend span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #aaa;
+  font-size: 11px;
+}
+
+/* Selected date */
+.selected-date-events {
+  margin-top: 20px;
+}
+
+.selected-date-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  color: #d4af37;
+}
+
+.selected-date-heading h4 {
+  margin: 0;
+  color: #eee;
+  font-size: 13px;
+}
+
+.no-calendar-events {
+  margin: 0;
+  padding: 14px;
+  border-radius: 8px;
+  color: #999;
+  background: rgba(255, 255, 255, 0.025);
+  font-size: 12px;
+}
+
+.calendar-event-list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.calendar-event-item {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.calendar-event-icon,
+.reminder-type-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  border-radius: 9px;
+}
+
+.calendar-event-icon.renewal,
+.reminder-type-icon.renewal {
+  color: #d4af37;
+  background: rgba(212, 175, 55, 0.1);
+}
+
+.calendar-event-icon.trial,
+.reminder-type-icon.trial {
+  color: #76b7e5;
+  background: rgba(118, 183, 229, 0.1);
+}
+
+.calendar-event-details {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.calendar-event-details strong {
+  color: #eee;
+  font-size: 12px;
+}
+
+.calendar-event-details span {
+  color: #999;
+  font-size: 11px;
+}
+
+.calendar-event-amount {
+  color: #f0d47a;
+  font-size: 12px;
+}
+
+/* Upcoming reminders */
+.reminders-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  color: #d4af37;
+}
+
+.reminders-heading h4 {
+  margin: 0;
+  color: #fff;
+  font-size: 15px;
+}
+
+.reminders-description {
+  margin: 10px 0 17px;
+  color: #999;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.upcoming-reminder-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.upcoming-reminder-item {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  padding: 11px 9px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 9px;
+  color: inherit;
+  background: rgba(255, 255, 255, 0.025);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.upcoming-reminder-item:hover {
+  border-color: rgba(212, 175, 55, 0.35);
+  background: rgba(212, 175, 55, 0.05);
+}
+
+.reminder-item-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.reminder-item-content strong {
+  overflow: hidden;
+  color: #eee;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.reminder-item-content span,
+.reminder-item-content small {
+  color: #999;
+  font-size: 10px;
+}
+
+.reminder-time {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  color: #d4af37;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.no-upcoming-reminders {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 25px 12px;
+  color: #999;
+  text-align: center;
+}
+
+.no-upcoming-reminders svg {
+  color: #d4af37;
+}
+
+.no-upcoming-reminders p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* Disclaimer */
+.calendar-disclaimer {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin-top: 17px;
+  padding: 12px;
+  border-radius: 8px;
+  color: #b7a36b;
+  background: rgba(212, 175, 55, 0.06);
+}
+
+.calendar-disclaimer svg {
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.calendar-disclaimer p {
+  margin: 0;
+  color: #aaa;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+/* Responsive calendar */
+@media (max-width: 850px) {
+  .renewal-calendar-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .renewal-calendar-section {
+    padding: 15px;
+  }
+
+  .calendar-main,
+  .upcoming-reminders {
+    padding: 12px;
+  }
+
+  .calendar-day {
+    min-height: 48px;
+    padding-top: 7px;
+  }
+
+  .calendar-weekday {
+    font-size: 10px;
+  }
+
+  .calendar-day-number {
+    font-size: 11px;
+  }
+
+  .renewal-calendar-heading h3 {
+    font-size: 18px;
+  }
+}

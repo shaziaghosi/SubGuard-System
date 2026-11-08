@@ -1,0 +1,1066 @@
+.dashboard-section {
+  padding: 110px 7%;
+  background: #090909;
+  color: #f5f1e8;
+}
+
+.dashboard-container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.dashboard-heading {
+  max-width: 720px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.dashboard-eyebrow {
+  color: #d6ad60;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.dashboard-heading h2 {
+  margin: 20px 0;
+  font-size: clamp(38px, 5vw, 62px);
+  line-height: 1.12;
+}
+
+.dashboard-heading h2 span {
+  color: #d6ad60;
+}
+
+.dashboard-heading > p:last-child {
+  color: #aaa69e;
+  line-height: 1.8;
+}
+
+.dashboard-panel {
+  padding: 30px;
+  border: 1px solid rgba(214, 173, 96, 0.25);
+  border-radius: 20px;
+  background: linear-gradient(
+    145deg,
+    #151411,
+    #0d0d0d 65%
+  );
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.3);
+}
+
+.dashboard-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  color: #d6ad60;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.dashboard-topbar > div {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.dashboard-live-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #d6ad60;
+  box-shadow: 0 0 10px rgba(214, 173, 96, 0.6);
+}
+
+.dashboard-demo-label {
+  color: #8f8a7d;
+  font-size: 10px;
+}
+
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 25px 0 35px;
+}
+
+.dashboard-stat {
+  padding: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.dashboard-stat > span {
+  color: #aaa69e;
+  font-size: 12px;
+}
+
+.dashboard-stat h3 {
+  margin: 13px 0 8px;
+  font-size: clamp(18px, 2.2vw, 27px);
+  overflow-wrap: anywhere;
+}
+
+.dashboard-stat p {
+  margin: 0;
+  color: #8f8a7d;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.dashboard-alert-stat h3 {
+  color: #d6ad60;
+}
+
+.dashboard-list-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  color: #d6ad60;
+}
+
+.dashboard-list-heading h3 {
+  color: #f5f1e8;
+  font-size: 17px;
+}
+
+.subscription-row {
+  display: grid;
+  grid-template-columns: 1.5fr 1.2fr 0.8fr 0.9fr;
+  align-items: center;
+  gap: 16px;
+  padding: 19px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.subscription-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.subscription-symbol {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(214, 173, 96, 0.3);
+  border-radius: 11px;
+  background: rgba(214, 173, 96, 0.08);
+  color: #d6ad60;
+  font-weight: 700;
+}
+
+.subscription-info h4 {
+  margin: 0 0 5px;
+  font-size: 14px;
+}
+
+.subscription-info p,
+.subscription-date p {
+  margin: 0;
+  color: #aaa69e;
+  font-size: 12px;
+}
+
+.subscription-date > span,
+.subscription-amount > span {
+  display: block;
+  margin-bottom: 6px;
+  color: #8f8a7d;
+  font-size: 11px;
+}
+
+.subscription-amount strong {
+  font-size: 15px;
+}
+
+.subscription-status {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+  color: #d6ad60;
+  font-size: 11px;
+}
+
+.dashboard-note {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid rgba(214, 173, 96, 0.16);
+  border-radius: 10px;
+  background: rgba(214, 173, 96, 0.045);
+  color: #d6ad60;
+}
+
+.dashboard-note p {
+  flex: 1;
+  margin: 0;
+  color: #aaa69e;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+@media (max-width: 850px) {
+  .dashboard-section {
+    padding: 80px 5%;
+  }
+
+  .dashboard-panel {
+    padding: 20px;
+  }
+
+  .dashboard-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .subscription-row {
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+
+  .subscription-status {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-section {
+    padding: 65px 5%;
+  }
+
+  .dashboard-panel {
+    padding: 15px;
+  }
+
+  .dashboard-topbar {
+    align-items: flex-start;
+    font-size: 9px;
+  }
+
+  .subscription-row {
+    grid-template-columns: 1fr;
+  }
+}
+/* ```css */
+/* ==============================
+   ADD SUBSCRIPTION FORM
+   ============================== */
+
+.subscription-form {
+  display: grid;
+  gap: 12px;
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+  margin: 35px auto;
+  padding: 28px;
+
+  /* Dark card with a subtle gold border */
+  background: #101010;
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  border-radius: 16px;
+
+  /* Soft shadow to lift the card from the background */
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* Form heading */
+.subscription-form h3 {
+  margin: 0 0 10px;
+  color: #d4af37;
+  font-size: 22px;
+}
+
+/* Input labels */
+.subscription-form label {
+  margin-top: 5px;
+  color: #d0d0d0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Text, number, date and dropdown fields */
+.subscription-form input,
+.subscription-form select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 14px;
+
+  color: #f5f5f5;
+  background: #181818;
+
+  border: 1px solid #333;
+  border-radius: 8px;
+
+  font: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Highlight the field currently being used */
+.subscription-form input:focus,
+.subscription-form select:focus {
+  outline: none;
+  border-color: #d4af37;
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.12);
+}
+
+/* Make placeholder text subtle */
+.subscription-form input::placeholder {
+  color: #777;
+}
+
+/* Keep dropdown options readable */
+.subscription-form select option {
+  color: #f5f5f5;
+  background: #181818;
+}
+
+/* Add Subscription button */
+.subscription-form button {
+  margin-top: 12px;
+  padding: 14px 18px;
+
+  color: #080808;
+  background: #d4af37;
+
+  border: none;
+  border-radius: 9px;
+
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+/* Interactive hover effect */
+.subscription-form button:hover {
+  background: #f0cf60;
+  transform: translateY(-2px);
+}
+
+/* Keyboard accessibility */
+.subscription-form button:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+/* Responsive spacing for smaller screens */
+@media (max-width: 600px) {
+  .subscription-form {
+    padding: 20px;
+    margin: 25px auto;
+  }
+
+  .subscription-form h3 {
+    font-size: 19px;
+  }
+}
+
+/* Delete Subscription Button */
+.delete-subscription-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  width: 38px;
+  height: 38px;
+  padding: 0;
+
+  color: #f08080;
+  background: rgba(240, 128, 128, 0.08);
+  border: 1px solid rgba(240, 128, 128, 0.25);
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+/* Hover Effect */
+.delete-subscription-btn:hover {
+  color: #ffffff;
+  background: #b83232;
+  border-color: #b83232;
+  transform: translateY(-2px);
+}
+
+/* Keyboard Accessibility */
+.delete-subscription-btn:focus-visible {
+  outline: 2px solid #d4af37;
+  outline-offset: 3px;
+}
+
+/* Click Effect */
+.delete-subscription-btn:active {
+  transform: scale(0.95);
+}
+
+/* Mobile Layout */
+@media (max-width: 600px) {
+  .delete-subscription-btn {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+/* Edit Subscription Button */
+.edit-subscription-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+
+  color: #d4af37;
+  background: rgba(212, 175, 55, 0.08);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  border-radius: 8px;
+
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.edit-subscription-btn:hover {
+  color: #080808;
+  background: #d4af37;
+  transform: translateY(-2px);
+}
+
+.edit-subscription-btn:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 3px;
+}
+
+/* Cancel Edit Button */
+.subscription-form .cancel-edit-btn {
+  margin-top: 0;
+  color: #e5e5e5;
+  background: #292929;
+  border: 1px solid #444444;
+}
+
+.subscription-form .cancel-edit-btn:hover {
+  color: #ffffff;
+  background: #3a3a3a;
+}
+/* Empty Subscription State */
+
+.empty-subscriptions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 45px 20px;
+  text-align: center;
+  color: #a5a5a5;
+  border: 1px dashed rgba(212, 175, 55, 0.3);
+  border-radius: 12px;
+}
+
+.empty-subscriptions svg {
+  color: #d4af37;
+}
+
+.empty-subscriptions h3 {
+  margin: 0;
+  color: #f5f5f5;
+  font-size: 18px;
+}
+
+.empty-subscriptions p {
+  margin: 0;
+  max-width: 350px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.empty-subscriptions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 45px 20px;
+  text-align: center;
+  color: #a5a5a5;
+  border: 1px dashed rgba(212, 175, 55, 0.3);
+  border-radius: 12px;
+}
+
+.empty-subscriptions svg {
+  color: #d4af37;
+}
+
+.empty-subscriptions h3 {
+  margin: 0;
+  color: #f5f5f5;
+  font-size: 18px;
+}
+
+.empty-subscriptions p {
+  margin: 0;
+  max-width: 350px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+/* Monthly Spending Breakdown */
+
+.spending-breakdown {
+  margin: 30px 0;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: 16px;
+}
+
+.breakdown-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.breakdown-eyebrow {
+  color: #d4af37;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.breakdown-heading h3 {
+  margin: 8px 0;
+  color: #f5f5f5;
+  font-size: 20px;
+}
+
+.breakdown-heading p {
+  margin: 0;
+  color: #a5a5a5;
+  font-size: 13px;
+}
+
+.breakdown-total {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 7px;
+}
+
+.breakdown-total span {
+  color: #a5a5a5;
+  font-size: 12px;
+}
+
+.breakdown-total strong {
+  color: #d4af37;
+  font-size: 22px;
+}
+
+.category-breakdown-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.category-breakdown-item {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.category-breakdown-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f5f5f5;
+  font-size: 14px;
+}
+
+.category-breakdown-info strong {
+  color: #d4af37;
+}
+
+.category-progress-track {
+  width: 100%;
+  height: 8px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+}
+
+.category-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #a98522, #e6c65c);
+  border-radius: 20px;
+  transition: width 0.4s ease;
+}
+
+.category-percentage {
+  color: #929292;
+  font-size: 11px;
+}
+
+.breakdown-empty {
+  padding: 20px 0;
+  color: #a5a5a5;
+  font-size: 13px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .breakdown-heading {
+    flex-direction: column;
+  }
+
+  .breakdown-total {
+    align-items: flex-start;
+  }
+
+  .spending-breakdown {
+    padding: 18px;
+  }
+}
+
+/* Monthly Spending Breakdown */
+
+.spending-breakdown {
+  margin: 30px 0;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: 16px;
+}
+
+.breakdown-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.breakdown-eyebrow {
+  color: #d4af37;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.breakdown-heading h3 {
+  margin: 8px 0;
+  color: #f5f5f5;
+  font-size: 20px;
+}
+
+.breakdown-heading p {
+  margin: 0;
+  color: #a5a5a5;
+  font-size: 13px;
+}
+
+.breakdown-total {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 7px;
+}
+
+.breakdown-total span {
+  color: #a5a5a5;
+  font-size: 12px;
+}
+
+.breakdown-total strong {
+  color: #d4af37;
+  font-size: 22px;
+}
+
+.category-breakdown-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.category-breakdown-item {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.category-breakdown-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f5f5f5;
+  font-size: 14px;
+}
+
+.category-breakdown-info strong {
+  color: #d4af37;
+}
+
+.category-progress-track {
+  width: 100%;
+  height: 8px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+}
+
+.category-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #a98522, #e6c65c);
+  border-radius: 20px;
+  transition: width 0.4s ease;
+}
+
+.category-percentage {
+  color: #929292;
+  font-size: 11px;
+}
+
+.breakdown-empty {
+  padding: 20px 0;
+  color: #a5a5a5;
+  font-size: 13px;
+  text-align: center;
+}
+
+/* Free Trial Checkbox */
+
+.trial-checkbox {
+  margin: 12px 0;
+}
+
+.trial-checkbox label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #d5d5d5;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.trial-checkbox input {
+  width: 16px;
+  height: 16px;
+  accent-color: #d4af37;
+  cursor: pointer;
+}
+
+/* Trial Status */
+
+.trial-status {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.trial-status.free-trial {
+  color: #8bd5a5;
+  background: rgba(80, 180, 110, 0.12);
+}
+
+.trial-status.trial-ending-soon,
+.trial-status.trial-ends-today {
+  color: #f0c75e;
+  background: rgba(212, 175, 55, 0.12);
+}
+
+.trial-status.trial-expired {
+  color: #ff8585;
+  background: rgba(220, 70, 70, 0.12);
+}
+
+/* Mobile Layout */
+
+@media (max-width: 600px) {
+  .breakdown-heading {
+    flex-direction: column;
+  }
+
+  .breakdown-total {
+    align-items: flex-start;
+  }
+
+  .spending-breakdown {
+    padding: 18px;
+  }
+}
+.cancel-subscription-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #d4af37;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.cancel-subscription-link:hover {
+  color: #f5d778;
+  text-decoration: underline;
+}
+
+/* Cancellation URL helper text */
+.cancel-url-help {
+  margin-top: -8px;
+  margin-bottom: 15px;
+  color: #999;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* Cancellation page link */
+.cancel-subscription-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #d4af37;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.cancel-subscription-link:hover {
+  color: #f5d778;
+  text-decoration: underline;
+}
+
+/* Lifecycle summary */
+.lifecycle-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 22px 0;
+}
+
+.lifecycle-summary-item {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 12px 16px;
+  border: 1px solid rgba(212, 175, 55, 0.15);
+  border-radius: 10px;
+  color: #c8c8c8;
+  background: rgba(255, 255, 255, 0.025);
+  font-size: 13px;
+}
+
+.lifecycle-summary-item strong {
+  color: #fff;
+  margin-left: 4px;
+}
+
+/* Lifecycle badge */
+.lifecycle-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: fit-content;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.lifecycle-badge.active {
+  color: #8bd8a1;
+  background: rgba(66, 180, 100, 0.12);
+}
+
+.lifecycle-badge.paused {
+  color: #e6c36a;
+  background: rgba(230, 195, 106, 0.12);
+}
+
+.lifecycle-badge.cancelled {
+  color: #e68d8d;
+  background: rgba(220, 90, 90, 0.12);
+}
+
+/* Lifecycle selector */
+.lifecycle-control {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 115px;
+}
+
+.lifecycle-control label {
+  color: #999;
+  font-size: 11px;
+}
+
+.lifecycle-control select {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  border-radius: 7px;
+  outline: none;
+  color: #f5f5f5;
+  background: #191919;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.lifecycle-control select:focus {
+  border-color: #d4af37;
+}
+
+/* Visually distinguish paused and cancelled records */
+.subscription-row.lifecycle-paused {
+  border-color: rgba(230, 195, 106, 0.2);
+}
+
+.subscription-row.lifecycle-cancelled {
+  border-color: rgba(220, 90, 90, 0.2);
+  opacity: 0.78;
+}
+
+/* Responsive lifecycle layout */
+@media (max-width: 768px) {
+  .lifecycle-summary {
+    gap: 8px;
+  }
+
+  .lifecycle-summary-item {
+    flex: 1 1 120px;
+    padding: 10px;
+  }
+
+  .lifecycle-control {
+    width: 100%;
+  }
+
+  .subscription-row {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .cancel-subscription-link {
+    margin-right: 10px;
+  }
+}
+/* Search, Filter and Sort Toolbar */
+
+.subscription-toolbar {
+  margin: 24px 0;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.subscription-search {
+  margin-bottom: 15px;
+}
+
+.subscription-search input,
+.subscription-filters select {
+  width: 100%;
+  padding: 12px 14px;
+  color: #f5f0e5;
+  background: #171717;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+}
+
+.subscription-search input:focus,
+.subscription-filters select:focus {
+  border-color: #c5a45b;
+}
+
+.subscription-search input::placeholder {
+  color: #888;
+}
+
+.subscription-filters {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.subscription-filters select {
+  cursor: pointer;
+}
+
+.subscription-filters option {
+  background: #171717;
+  color: #fff;
+}
+
+.toolbar-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 16px;
+  color: #aaa;
+  font-size: 13px;
+}
+
+.toolbar-footer button,
+.empty-subscriptions button {
+  padding: 9px 15px;
+  color: #d9bb77;
+  background: transparent;
+  border: 1px solid rgba(217, 187, 119, 0.45);
+  border-radius: 7px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.toolbar-footer button:hover,
+.empty-subscriptions button:hover {
+  color: #171717;
+  background: #d9bb77;
+}
+
+@media (max-width: 768px) {
+  .subscription-filters {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .subscription-filters {
+    grid-template-columns: 1fr;
+  }
+
+  .toolbar-footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
