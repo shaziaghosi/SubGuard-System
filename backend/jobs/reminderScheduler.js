@@ -1,5 +1,5 @@
 const cron = require("node-cron");
-const Subscription = require("../models/Subscription");
+const Subscription = require("../models/subscription");
 const sendEmail = require("../config/mailer");
 
 const ONE_DAY = 24 * 60 * 60 * 1000;

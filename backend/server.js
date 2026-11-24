@@ -1,6 +1,7 @@
-const dotenv = require("dotenv");
+const dns = require("dns");
+dns.setServers(["8.8.8.8", "1.1.1.1"]);
 
-// Load environment variables FIRST
+const dotenv = require("dotenv");
 dotenv.config();
 
 const express = require("express");
@@ -9,7 +10,7 @@ const cors = require("cors");
 const connectDB = require("./config/db");
 const authRoutes = require("./routes/authRoutes");
 const protect = require("./middleware/authMiddleware");
-const subscriptionRoutes = require("./routes/SubscriptionRoutes");
+const subscriptionRoutes = require("./routes/subscriptionRoutes");
 const startReminderScheduler = require("./jobs/reminderScheduler");
 
 
