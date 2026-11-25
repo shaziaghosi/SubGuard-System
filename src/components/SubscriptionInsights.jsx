@@ -102,11 +102,6 @@ function SubscriptionInsights({ subscriptions = [] }) {
   const categoryEntries = Object.entries(insights.categoryTotals)
     .sort((a, b) => b[1] - a[1]);
 
-  const largestCategory = Math.max(
-    0,
-    ...categoryEntries.map(([, amount]) => amount)
-  );
-
   return (
     <section className="insights-section">
       <div className="insights-heading">

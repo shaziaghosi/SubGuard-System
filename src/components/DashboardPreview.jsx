@@ -11,7 +11,6 @@ import {
   Trash2,
   Pencil,
   PauseCircle,
-  PlayCircle,
   XCircle,
 } from "lucide-react";
 import {
