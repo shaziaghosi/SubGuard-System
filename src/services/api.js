@@ -3,7 +3,7 @@ import axios from "axios";
 
 // Base URL of the SubGuard backend
 const API = axios.create({
-  baseURL: "https://subguard-system-3.onrender.com/api",
+  baseURL: "https://subguard-system.onrender.com/api",
   headers: {
     "Content-Type": "application/json",
   },
